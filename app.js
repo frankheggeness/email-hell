@@ -18,3 +18,4 @@ function emailFinder() {
 let emailModule = emailFinder();
 
 console.log(emailModule.findEmailAddress)
+console.log(emailFinder)
