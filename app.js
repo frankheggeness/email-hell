@@ -9,6 +9,7 @@ function emailFinder() {
 
     return prev;
   }, {})
+
   return {
     findEmailAddress,
   }
