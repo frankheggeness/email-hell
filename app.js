@@ -1,15 +1,15 @@
-
-
 function emailFinder() {
-  let dataset = require('./email-log.json')
-  const findEmailAddress = dataset.emails.reduce(function (prev, current, index, array) {
+  let dataset = require('./email-log.json');
+  const findEmailAddress = dataset.emails.reduce(function (prev, current) {
     if (prev.hasOwnProperty(current.email)) {
-      prev[current.email]++
+      prev[current.email]++;
     } else {
-      prev[current.email] = 1
+      prev[current.email] = 1;
     }
-    return prev
+
+    return prev;
   }, {})
+
   return {
     findEmailAddress,
   }
